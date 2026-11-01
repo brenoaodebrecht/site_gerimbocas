@@ -1,0 +1,155 @@
+
+.compra-container {
+    padding: 35px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.compra-container h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.produto-selecionado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.produto-selecionado img {
+    width: 300px;
+    height: 280px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.produto-informacoes {
+    min-width: 220px;
+}
+
+.categoria-produto {
+    color: #777;
+    font-size: 16px;
+}
+
+.produto-informacoes h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.preco-produto {
+    color: #198754;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.finalizar-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.btn-finalizar {
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #146c43;
+    transform: translateY(-2px);
+}
+
+.pagamento-form {
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 25px;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.pagamento-form h2 {
+    margin-bottom: 20px;
+}
+
+.pagamento-form select {
+    margin: 12px 0 25px;
+    padding: 12px;
+}
+
+.pagamento-form button {
+    width: 100%;
+}
+
+
+/* Ajustes de layout das páginas de compra */
+main.compra-container,
+main .compra-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: min(96%, 1000px);
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(241, 243, 252);
+}
+
+.compra-container h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.produto-selecionado {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.produto-selecionado img {
+    max-width: 100%;
+}
+
+.btn-finalizar:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@media (max-width: 600px) {
+    main.compra-container,
+    main .compra-container {
+        width: 96%;
+        padding: 18px;
+        margin: 18px auto;
+    }
+
+    .produto-selecionado {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .produto-selecionado img {
+        width: 100%;
+        max-width: 260px;
+        height: 220px;
+    }
+
+    .produto-informacoes {
+        min-width: 0;
+    }
+}

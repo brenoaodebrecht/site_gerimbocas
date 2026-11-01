@@ -1,0 +1,30 @@
+.cabecalho{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linha-branca{
+    background-color: white;
+    margin: 10px;
+    height: 2px;
+    width: 40%;
+}
+.linha{
+    background-color: rgb(56, 212, 173);
+    margin: 10px;
+    height: 2px;
+    width: 40%;
+}
+.titulo{
+    color: rgb(56, 212, 173);
+    font-size: 30px;
+    font-weight: bold;
+}
+.titulo-branco{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(56, 212, 173);
+}
+.responsivo{
+    display: flex;
+}
+.b1{
+    display: flex;
+}
+.b2{
+    display: flex;
+}
+
+/* CONFIG TAMANHO DOS ELEMENTOS*/
+.navb nav{
+    height: auto;
+}
+.navb .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;   
+    color: rgb(52, 192, 157);
+}
+.navb .navbar-brand:hover{ 
+    color: rgb(220, 226, 245);
+}
+.navb .nav-link{
+    font-size: 25px;
+}
+
+/* CONFIG OUTROS LINKS */
+.navb .nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(56, 212, 173);
+}
+.navb .nav-link:hover{
+    color: rgb(220, 226, 245);
+}
+
+/* CONFIG DA ABA ATIVA */
+.navb .active{
+    height: auto;
+    width: auto;
+    background-color: rgb(56, 212, 173);
+    border-radius: 20px;
+}
+.navb .active a{
+    text-decoration: none;
+    color: rgb(220, 226, 245);
+    font-weight: bold;
+}
+.navb .active:hover{
+    border-radius: 20px;
+    background-color: rgb(220, 226, 245);
+}
+.navb .active a:hover{
+    color: rgb(56, 212, 173);
+}
+
+@media (max-width: 768px) {
+    .navb .navbar-brand{
+        font-size: 20px;
+    }
+    .navb .nav-link{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 424px) {
+
+    .navb .responsivo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navb body{
+        background-color: rgb(56, 212, 173);
+    }
+    .navb .navbar-brand{
+        font-size: 20px;
+    }
+    .navb .nav-link{
+        font-size: 15px;
+    }
+}

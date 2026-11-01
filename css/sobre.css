@@ -1,0 +1,199 @@
+
+:root {
+    --verde: rgb(56, 212, 173);
+    --fundo: rgb(241, 243, 252);
+    --lavanda: rgb(220, 226, 245);
+    --roxo: rgba(57, 31, 177, 0.75);
+    --texto: #25243a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+}
+
+.sobre-main {
+    width: min(1200px, 94%);
+    margin: 28px auto 60px;
+}
+
+/* BANNER */
+
+.sobre-hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: 370px;
+    padding: 40px;
+    border-radius: 24px;
+    background: var(--verde);
+}
+
+.sobre-kicker {
+    color: var(--roxo);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.sobre-hero h1 {
+    font-size: clamp(35px, 5vw, 55px);
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.sobre-hero p {
+    font-size: 17px;
+}
+
+.sobre-hero-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-top: 65px;
+}
+
+.quem-somos-img img {
+    width: 100%;
+    border-radius: 22px;
+}
+
+.quem-somos-text h2,
+.section-title h2,
+.diferenciais-text h2 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.quem-somos-text p {
+    color: #65647a;
+    line-height: 1.7;
+}
+
+/* MISSÃO, VISÃO E VALORES */
+
+.valores-section {
+    margin-top: 75px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.valor-card {
+    padding: 30px 24px;
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(36, 30, 90, .06);
+    transition: .2s;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+}
+
+.valor-icon {
+    font-size: 38px;
+    color: var(--roxo);
+    margin-bottom: 12px;
+}
+
+.valor-card h3 {
+    font-weight: 900;
+}
+
+.valor-card p {
+    color: #65647a;
+    line-height: 1.6;
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-top: 75px;
+    padding: 35px;
+    border-radius: 24px;
+    background: var(--lavanda);
+}
+
+.diferenciais-text ul {
+    padding-left: 20px;
+    line-height: 2.2;
+    font-weight: 600;
+}
+
+.diferenciais-img img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* RODAPÉ */
+
+.sobre-footer {
+    margin-top: 55px;
+    padding: 22px;
+    border-radius: 18px;
+    background: var(--texto);
+    color: white;
+    text-align: center;
+}
+
+.sobre-footer p {
+    margin: 5px 0 0;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .sobre-hero,
+    .quem-somos,
+    .diferenciais {
+        grid-template-columns: 1fr;
+    }
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-hero {
+        padding: 25px;
+    }
+
+    .quem-somos {
+        gap: 25px;
+    }
+
+    .diferenciais {
+        padding: 25px;
+    }
+
+}
